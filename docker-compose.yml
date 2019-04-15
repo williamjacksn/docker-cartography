@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  cartography:
+    image: williamjackson/cartography
+    build: .
+  neo4j:
+    image: neo4j:3.3.9
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - neo4j-data:/data
+
+volumes:
+  neo4j-data:
