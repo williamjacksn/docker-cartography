@@ -8,7 +8,7 @@ First, launch a Neo4j container:
 
 ```bash
 docker container run \
-  -e NEO4J_AUTh=none \
+  -e NEO4J_AUTH=none \
   -v neo4j-data:/data \
   -p 7474:7474 \
   -p 7687:7687 \
