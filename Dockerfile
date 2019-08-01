@@ -18,4 +18,4 @@ ENTRYPOINT ["/cartography/docker-entrypoint.sh"]
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-cartography" \
       org.opencontainers.image.title="Cartography" \
-      org.opencontainers.image.version=0.2.2
+      org.opencontainers.image.version=0.7.0
