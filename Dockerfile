@@ -1,14 +1,13 @@
 FROM python:3.7.4-alpine3.10
 
-COPY requirements.txt /cartography/requirements.txt
-
-RUN /usr/local/bin/pip install --no-cache-dir --requirement /cartography/requirements.txt
-
 ENV AWS_ACCESS_KEY_ID="" \
     AWS_DEFAULT_REGION="" \
     AWS_SECRET_ACCESS_KEY="" \
     CARTOGRAPHY_VERSION="0.7.0" \
-    NEO4J_URI="bolt://neo4j:7687"
+    NEO4J_URI="bolt://neo4j:7687" \
+    PYTHONUNBUFFERED="1"
+
+RUN /usr/local/bin/pip install --no-cache-dir cartography==${CARTOGRAPHY_VERSION}
 
 COPY docker-generate-credentials.py /cartography/docker-generate-credentials.py
 COPY docker-entrypoint.sh /cartography/docker-entrypoint.sh
