@@ -3,7 +3,7 @@ FROM python:3.7.4-alpine3.10
 ENV AWS_ACCESS_KEY_ID="" \
     AWS_DEFAULT_REGION="" \
     AWS_SECRET_ACCESS_KEY="" \
-    CARTOGRAPHY_VERSION="0.9.0" \
+    CARTOGRAPHY_VERSION="0.10.0" \
     NEO4J_URI="bolt://neo4j:7687" \
     PYTHONUNBUFFERED="1"
 
@@ -18,4 +18,4 @@ ENTRYPOINT ["/cartography/docker-entrypoint.sh"]
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-cartography" \
       org.opencontainers.image.title="Cartography" \
-      org.opencontainers.image.version=${CARTOGRAPHY_VERSION}
+      org.opencontainers.image.version="${CARTOGRAPHY_VERSION}"
