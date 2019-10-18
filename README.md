@@ -6,19 +6,19 @@ A Docker image for [lyft/cartography](https://github.com/lyft/cartography).
 
 First, launch a Neo4j container:
 
-```bash
+```sh
 docker container run \
   -e NEO4J_AUTH=none \
   -v neo4j-data:/data \
   -p 7474:7474 \
   -p 7687:7687 \
   -d \
-  neo4j:3.3.9
+  neo4j:3.5.12
 ```
 
 Then, run Cartography:
 
-```bash
+```sh
 docker container run \
   -e AWS_ACCESS_KEY_ID=... \
   -e AWS_SECRET_ACCESS_KEY=... \

@@ -1,9 +1,9 @@
-FROM python:3.7.4-alpine3.10
+FROM python:3.8.0-alpine3.10
 
 ENV AWS_ACCESS_KEY_ID="" \
     AWS_DEFAULT_REGION="" \
     AWS_SECRET_ACCESS_KEY="" \
-    CARTOGRAPHY_VERSION="0.10.0" \
+    CARTOGRAPHY_VERSION="0.11.0" \
     NEO4J_URI="bolt://neo4j:7687" \
     PYTHONUNBUFFERED="1"
 
