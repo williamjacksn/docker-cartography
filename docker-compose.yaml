@@ -4,6 +4,12 @@ services:
   cartography:
     image: williamjackson/cartography
     build: .
+    environment:
+      AWS_ACCESS_KEY_ID: replace this text with your access key id
+      AWS_DEFAULT_REGION: us-west-2
+      AWS_SECRET_ACCESS_KEY: replace this text with you secret access key
+      NEO4J_URI: bolt://neo4j:7687
+
   neo4j:
     image: neo4j:3.5.14
     environment:
