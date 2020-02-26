@@ -1,4 +1,4 @@
-FROM python:3.8.1-alpine3.11
+FROM python:3.8.2-alpine3.11
 
 ENV CARTOGRAPHY_VERSION="0.17.1" \
     NEO4J_URI="bolt://neo4j:7687" \
