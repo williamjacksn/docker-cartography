@@ -1,7 +1,8 @@
 FROM python:3.8.2-alpine3.11
 
-ENV CARTOGRAPHY_VERSION="0.17.1" \
-    NEO4J_URI="bolt://neo4j:7687" \
+ARG CARTOGRAPHY_VERSION="0.18.0"
+
+ENV NEO4J_URI="bolt://neo4j:7687" \
     PYTHONUNBUFFERED="1"
 
 RUN /usr/local/bin/pip install --no-cache-dir "cartography==${CARTOGRAPHY_VERSION}"
