@@ -1,8 +1,8 @@
-version: '3.7'
+version: '3.8'
 
 services:
   cartography:
-    image: williamjackson/cartography
+    image: ghcr.io/williamjacksn/cartography
     build: .
     environment:
       AWS_ACCESS_KEY_ID: replace this text with your access key id
