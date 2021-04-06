@@ -1,4 +1,4 @@
-FROM python:3.9.3-alpine3.13
+FROM python:3.9.4-alpine3.13
 
 ENV NEO4J_URI="bolt://neo4j:7687" \
     PYTHONUNBUFFERED="1"
