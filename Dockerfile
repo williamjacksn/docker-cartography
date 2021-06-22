@@ -1,16 +1,17 @@
 FROM python:3.9.5-alpine3.13
 
-ENV NEO4J_URI="bolt://neo4j:7687" \
+RUN /usr/sbin/adduser -g python -D python
+
+USER python
+RUN /usr/local/bin/python -m venv /home/python/venv
+
+ENV PATH="/home/python/venv/bin:${PATH}" \
     PYTHONUNBUFFERED="1"
 
-COPY requirements.txt /cartography/requirements.txt
-RUN /usr/local/bin/pip install --no-cache-dir --requirement /cartography/requirements.txt
+COPY --chown=python:python requirements.txt /home/python/cartography/requirements.txt
+RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/cartography/requirements.txt
 
-COPY docker-generate-credentials.py /cartography/docker-generate-credentials.py
-COPY docker-entrypoint.sh /cartography/docker-entrypoint.sh
-RUN chmod +x /cartography/docker-entrypoint.sh
-
-ENTRYPOINT ["/cartography/docker-entrypoint.sh"]
+ENTRYPOINT ["/home/python/venv/bin/cartography"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-cartography" \

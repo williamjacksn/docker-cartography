@@ -14,8 +14,7 @@ This image is also available [on Docker Hub][b] as `williamjackson/cartography`.
 
 ## Usage
 
-In your current working directory, create a file named `docker-compose.yaml` with the following contents. Include your
-actual AWS Access Key ID and Secret Access Key.
+In your current working directory, create a file named `docker-compose.yaml` with the following contents.
 
 ```yaml
 version: '3.8'
@@ -23,11 +22,12 @@ version: '3.8'
 services:
   cartography:
     image: ghcr.io/williamjacksn/cartography
-    environment:
-      AWS_ACCESS_KEY_ID: replace this text with your access key id
-      AWS_DEFAULT_REGION: us-west-2
-      AWS_SECRET_ACCESS_KEY: replace this text with you secret access key
-      NEO4J_URI: bolt://neo4j:7687
+    command:
+      - --neo4j-uri
+      - bolt://neo4j:7687
+    volumes:
+      # assuming you have configured AWS credentials in your home directory, mount them into the container
+      - ~/.aws:/home/python/.aws
 
   neo4j:
     image: neo4j:3.5.14
