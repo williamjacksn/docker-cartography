@@ -169,7 +169,7 @@ packaging==20.9
     # via
     #   cartography
     #   google-api-core
-paramiko==2.7.2
+paramiko==2.10.1
     # via azure-cli-core
 pdpyras==4.3.0
     # via cartography
@@ -275,6 +275,7 @@ six==1.16.0
     #   neotime
     #   oauth2client
     #   okta
+    #   paramiko
     #   protobuf
     #   pynacl
     #   pyopenssl
