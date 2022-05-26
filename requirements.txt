@@ -136,7 +136,7 @@ kubernetes==18.20.0
     # via cartography
 marshmallow==3.12.1
     # via cartography
-msal==1.12.0
+msal==1.17.0
     # via
     #   azure-cli-core
     #   azure-identity
