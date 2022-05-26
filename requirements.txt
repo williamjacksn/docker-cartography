@@ -88,7 +88,7 @@ cryptography==3.3.2
     #   paramiko
     #   pyjwt
     #   pyopenssl
-dnspython==2.1.0
+dnspython==2.2.1
     # via cartography
 google-api-core==1.31.5
     # via google-api-python-client
