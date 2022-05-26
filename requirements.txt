@@ -215,7 +215,7 @@ pyparsing==3.0.9
     #   packaging
 pysocks==1.7.1
     # via requests
-python-dateutil==2.8.1
+python-dateutil==2.8.2
     # via
     #   adal
     #   botocore
