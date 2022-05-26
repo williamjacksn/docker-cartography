@@ -13,5 +13,14 @@ services:
       - 7474:7474
       - 7687:7687
 
+  shell:
+    entrypoint:
+      - /bin/sh
+    image: ghcr.io/williamjacksn/cartography
+    init: true
+    volumes:
+      - ./:/home/python/cartography
+    working_dir: /home/python/cartography
+
 volumes:
   neo4j-data:
