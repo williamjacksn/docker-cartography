@@ -60,7 +60,7 @@ botocore==1.26.8
     #   boto3
     #   cartography
     #   s3transfer
-cachetools==4.2.4
+cachetools==5.1.0
     # via google-auth
 cartography==0.59.0
     # via -r requirements.in
