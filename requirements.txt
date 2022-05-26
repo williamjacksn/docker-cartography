@@ -225,7 +225,7 @@ python-dateutil==2.8.1
     #   botocore
     #   kubernetes
     #   okta
-python-digitalocean==1.16.0
+python-digitalocean==1.17.0
     # via cartography
 pytz==2021.1
     # via
