@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   cartography:
     image: ghcr.io/williamjacksn/cartography
