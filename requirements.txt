@@ -64,7 +64,7 @@ cachetools==4.2.4
     # via google-auth
 cartography==0.59.0
     # via -r requirements.in
-certifi==2021.5.30
+certifi==2022.5.18.1
     # via
     #   kubernetes
     #   msrest
