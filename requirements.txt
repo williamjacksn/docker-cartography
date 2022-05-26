@@ -94,7 +94,7 @@ google-api-core==2.8.0
     # via google-api-python-client
 google-api-python-client==2.49.0
     # via cartography
-google-auth==1.32.0
+google-auth==2.6.6
     # via
     #   google-api-core
     #   google-api-python-client
