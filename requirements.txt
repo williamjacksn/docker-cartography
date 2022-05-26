@@ -92,7 +92,7 @@ dnspython==2.2.1
     # via cartography
 google-api-core==1.31.5
     # via google-api-python-client
-google-api-python-client==2.9.0
+google-api-python-client==2.49.0
     # via cartography
 google-auth==1.32.0
     # via
@@ -263,7 +263,6 @@ six==1.16.0
     #   azure-identity
     #   cryptography
     #   google-api-core
-    #   google-api-python-client
     #   google-auth
     #   google-auth-httplib2
     #   isodate
