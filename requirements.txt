@@ -115,7 +115,7 @@ idna==2.10
     # via requests
 isodate==0.6.1
     # via msrest
-jmespath==0.10.0
+jmespath==1.0.0
     # via
     #   azure-cli-core
     #   boto3
