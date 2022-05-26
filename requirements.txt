@@ -20,7 +20,7 @@ azure-cli-core==2.37.0
     # via cartography
 azure-cli-telemetry==1.0.6
     # via azure-cli-core
-azure-common==1.1.27
+azure-common==1.1.28
     # via
     #   azure-mgmt-compute
     #   azure-mgmt-cosmosdb
