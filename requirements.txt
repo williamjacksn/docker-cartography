@@ -132,7 +132,7 @@ jsonpickle==2.0.0
     # via python-digitalocean
 knack==0.8.2
     # via azure-cli-core
-kubernetes==18.20.0
+kubernetes==21.7.0
     # via cartography
 marshmallow==3.12.1
     # via cartography
