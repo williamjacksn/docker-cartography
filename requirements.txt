@@ -90,7 +90,7 @@ cryptography==3.3.2
     #   pyopenssl
 dnspython==2.2.1
     # via cartography
-google-api-core==1.31.5
+google-api-core==2.8.0
     # via google-api-python-client
 google-api-python-client==2.49.0
     # via cartography
@@ -168,7 +168,6 @@ packaging==20.9
     # via
     #   azure-cli-core
     #   cartography
-    #   google-api-core
 paramiko==2.10.1
     # via azure-cli-core
 pdpyras==4.5.0
@@ -224,9 +223,7 @@ python-dateutil==2.8.1
 python-digitalocean==1.17.0
     # via cartography
 pytz==2022.1
-    # via
-    #   google-api-core
-    #   neotime
+    # via neotime
 pyyaml==5.4.1
     # via
     #   cartography
@@ -262,7 +259,6 @@ six==1.16.0
     #   azure-core
     #   azure-identity
     #   cryptography
-    #   google-api-core
     #   google-auth
     #   google-auth-httplib2
     #   isodate
