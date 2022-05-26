@@ -173,7 +173,7 @@ packaging==20.9
     #   google-api-core
 paramiko==2.10.1
     # via azure-cli-core
-pdpyras==4.3.0
+pdpyras==4.5.0
     # via cartography
 pkginfo==1.7.0
     # via azure-cli-core
