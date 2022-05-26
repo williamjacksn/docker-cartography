@@ -95,7 +95,7 @@ cryptography==3.3.2
     #   urllib3
 dnspython==2.1.0
     # via cartography
-google-api-core==1.30.0
+google-api-core==1.31.5
     # via google-api-python-client
 google-api-python-client==2.9.0
     # via cartography
