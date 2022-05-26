@@ -198,7 +198,7 @@ pyasn1-modules==0.2.8
     #   oauth2client
 pycparser==2.21
     # via cffi
-pygments==2.9.0
+pygments==2.12.0
     # via knack
 pyjwt[crypto]==2.4.0
     # via
