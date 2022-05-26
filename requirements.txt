@@ -111,7 +111,7 @@ httplib2==0.20.4
     #   oauth2client
 humanfriendly==10.0
     # via azure-cli-core
-idna==2.10
+idna==3.3
     # via requests
 isodate==0.6.1
     # via msrest
