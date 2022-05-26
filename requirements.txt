@@ -277,7 +277,7 @@ tabulate==0.8.9
     # via knack
 typing-extensions==4.2.0
     # via azure-core
-uritemplate==3.0.1
+uritemplate==4.1.1
     # via google-api-python-client
 urllib3==1.26.9
     # via
