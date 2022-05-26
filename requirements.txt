@@ -255,7 +255,7 @@ requests-oauthlib==1.3.0
     # via
     #   kubernetes
     #   msrest
-rsa==4.7.2
+rsa==4.8
     # via
     #   google-auth
     #   oauth2client
