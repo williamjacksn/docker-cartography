@@ -74,7 +74,7 @@ cffi==1.15.0
     #   bcrypt
     #   cryptography
     #   pynacl
-chardet==4.0.0
+charset-normalizer==2.0.12
     # via requests
 crowdstrike-falconpy==1.1.2
     # via cartography
@@ -230,7 +230,7 @@ pyyaml==6.0
     #   cartography
     #   knack
     #   kubernetes
-requests[socks]==2.25.1
+requests[socks]==2.27.1
     # via
     #   adal
     #   azure-cli-core
