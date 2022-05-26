@@ -51,7 +51,7 @@ azure-mgmt-sql==1.0.0
     # via cartography
 azure-mgmt-storage==20.0.0
     # via cartography
-bcrypt==3.2.0
+bcrypt==3.2.2
     # via paramiko
 boto3==1.23.8
     # via cartography
@@ -261,7 +261,6 @@ six==1.16.0
     # via
     #   azure-core
     #   azure-identity
-    #   bcrypt
     #   cryptography
     #   google-api-core
     #   google-api-python-client
