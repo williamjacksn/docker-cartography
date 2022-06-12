@@ -1,5 +1,11 @@
 # docker-cartography
 
+> As of version 0.62.0, the Cartography project provides an official container image:
+> 
+> https://lyft.github.io/cartography/ops.html#docker-image
+> 
+> **This project is no longer maintained.**
+
 A Docker image for [lyft/cartography][a].
 
 [a]: https://github.com/lyft/cartography
